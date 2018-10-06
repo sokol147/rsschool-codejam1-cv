@@ -1,0 +1,46 @@
+body, html{
+	margin:0;
+	padding: 0;
+  height: 100%;
+  font-family: 'Product Sans';
+}
+// Sticky footer
+/*
+body, html{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  flex: 1 1 auto;
+}
+*/
+html{
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing:antialised;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+ul,li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}

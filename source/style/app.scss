@@ -1,0 +1,17 @@
+@import 'common/variables';
+@import 'common/mixins';
+@import 'common/fonts';
+@import 'common/default';
+@import 'common/sprite-img';
+@import 'blocks/**/*';
+
+
+
+
+$status-colors: (
+  primary: #000,
+  success: #27BA6C,
+  info: #03a9f4,
+  warning: #FF8833,
+  danger: #ff1a1a
+);
