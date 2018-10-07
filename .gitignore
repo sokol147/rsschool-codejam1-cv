@@ -32,8 +32,8 @@ Thumbs.db
 .svn
 bower_components
 dist
-build
 PSD
+# build
 
 # Node.JS
 node_modules

@@ -1,0 +1,23 @@
+- var sectionHeader = 'Education'
+-
+  var educationList = [
+    {
+      title: 'Master Degree',
+      time: 'Sep 2016 - current',
+      descr: 'BSU Faculty of Economics, Department of Innovation Management',
+    },{
+      title: 'Bachelor Degree',
+      time: 'Sep 2012 - Jul 2016',
+      descr: 'BSU Faculty of Economics, Department of Management'
+    }
+  ]
+- var iconClass = 'fas fa-pencil-alt'
+section.resume__education.resume__section
+  h3.header--with-line= sectionHeader
+  i(class=`${iconClass}`).resume__icon
+  ul.resume__list
+    each item in educationList
+      li.resume__item
+        p.resume__title= item.title
+        p.resume__time= item.time
+        p.resume__description= item.descr
