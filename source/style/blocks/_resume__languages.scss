@@ -1,0 +1,15 @@
+.languages{
+  &__item{
+    margin-bottom: 1rem;
+  }
+  &__name{
+    font-weight: bold;
+  }
+  &__level{
+    margin-left: 1rem;
+  }
+  &__practice{
+    color: darken($bg-grey, 70%);
+    font-size: 0.85rem;
+  }
+}

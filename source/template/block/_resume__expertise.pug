@@ -1,0 +1,22 @@
+-
+  var expertiseList = [
+    {
+      title: 'Freelancer',
+      time: 'Dec 2017 - current',
+      descr: 'Creation lending page and news portal',
+    },{
+      title: 'HTML coder / Technical support - Abiatec',
+      time: 'Nov 2016 - Sep 2017',
+      descr: 'Creation of web pages, technical support with CMS, content management, page integration with CMS'
+    }
+  ]
+- var iconClass = 'fas fa-briefcase'
+section.resume__expertise.resume__section
+  h3.header--with-line Expertise
+  i(class=`${iconClass}`).resume__icon
+  ul.resume__list
+    each item in expertiseList
+      li.resume__item
+        p.resume__title= item.title
+        p.resume__time= item.time
+        p.resume__description= item.descr

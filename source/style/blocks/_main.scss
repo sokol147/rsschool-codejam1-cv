@@ -1,0 +1,62 @@
+.main{
+  &__about{
+    display: grid;
+    grid-template: 'who personal expertise';
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .expertise,
+  .personal-info,
+  .who{
+    padding: 4rem 3rem;
+  }
+  .expertise,
+  .who{
+    background-color: $bg-grey;
+  }
+  .personal-info{
+    background-color: $bg-grey-dark;
+  }
+  .who{
+    grid-area: who;
+  }
+  .personal-info{
+    grid-area: personal;
+  }
+  .expertise{
+    grid-area: expertise;
+  }
+}
+@media only screen and (max-width: 900px){
+  .main__about{
+    grid-template: 'who personal'
+                   'expertise expertise'
+  }
+  .personal-info__photo{
+    left: -115px;
+    transform: translateX(0);
+  }
+  .expertise__list{
+    display: flex;
+  }
+  .expertise__item{
+    width: 50%;
+    &:first-child{
+      border-bottom: none;
+    }
+    &:not(:last-child){
+      margin-right: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 600px){
+  .main__about{
+    grid-template: 'personal'
+                   'who'
+                   'expertise'
+  }
+  .personal-info__photo{
+    left: 50%;
+    transform: translateX(-50%);
+    top: -130px;
+  }
+}
