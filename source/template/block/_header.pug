@@ -1,0 +1,17 @@
+- var name = 'Uladzislau Sakalou';
+- var specialization = 'Junior Front-end Developer';
+- var callToAction = 'Do you have any questions? Write to me at ';
+- var mail = 'sokolov.stb@gmail.com';
+- var headerBtnText = 'Download My CV';
+header.header
+  .header__content
+    .header__menu-btn-wrapper
+      a(href='#').menu-btn#menu-btn
+        span.menu-btn__line
+    .quick-info
+      h2.name= name
+      p.specialization= specialization
+    .quick-view
+      a(href='templates/documents/CV Uladzislau Sakalou.pdf').quick-view__btn.btn-default= headerBtnText
+      .quick-view__mail= callToAction
+        a.quick-view__link(href=`mailto:${mail}`)= mail

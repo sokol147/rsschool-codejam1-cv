@@ -1,0 +1,32 @@
+.interests{
+  &__icon{
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem !important;
+    text-align: center;
+    color: $main-blue;
+    border: 2px solid $main-blue;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  &__title{
+    color: darken($bg-grey,90%);
+  }
+  &__list{
+    display: flex;
+  }
+  &__item{
+    text-align: center;
+    min-width: 64px;
+    &:not(:last-child){
+      margin-right: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 600px){
+  .interests__list{
+    flex-wrap: wrap;
+  }
+}

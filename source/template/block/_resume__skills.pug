@@ -1,0 +1,46 @@
+- var iconClass ='fas fa-file-code'
+-
+  var skills = [
+    {
+      name: 'HTML5',
+      number: '80'
+    },{
+      name: 'CSS3',
+      number: '85'
+    },{
+      name: 'CSS Animation',
+      number: '60'
+    },{
+      name: 'Pug',
+      number: '75'
+    },{
+      name: 'Scss/Sass',
+      number: '80'
+    },{
+      name: 'JavaScript',
+      number: '30'
+    },{
+      name: 'Jquery',
+      number: '60'
+    },{
+      name: 'Gulp',
+      number: '70'
+    },{
+      name: 'Git',
+      number: '50'
+    },{
+      name: 'Photoshop',
+      number: '60'
+    }
+  ]
+section.resume__skills.resume__section
+  h3.header--with-line Skills
+  i(class=`${iconClass}`).resume__icon
+  ul.skills__list
+    each item in skills
+      li.skills__item
+        p.skills__name= item.name
+        .skills__percent.percent
+          p.percent__number= item.number
+          .percent__line(class=`percent__line-${item.number}`)
+          .percent__line--bg

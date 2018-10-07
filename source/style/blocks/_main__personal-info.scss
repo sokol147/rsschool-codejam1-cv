@@ -1,0 +1,40 @@
+.personal-info{
+  &__content{
+    position: relative;
+  }
+  &__photo{
+    border-radius: 50%;
+    border: 11px solid $main-blue;
+    position: absolute;
+    left: 50%;
+    top: -160px;
+    z-index: 3;
+    transform: translateX(-50%);
+  }
+  .contacts{
+    &__list{
+      margin-bottom: 1.5rem;
+    }
+    &__title{
+      font-weight: bold;
+    }
+    &__text{
+      font-weight: normal;
+      margin-left: 5px;
+    }
+  }
+  .social{
+    display: flex;
+    &__link{
+      color: $main-blue;
+      &:hover{
+        color: darken($main-blue, 10%);
+      }
+    }
+    &__item{
+      &:not(:last-child){
+        margin-right: 0.9rem;
+      }
+    }
+  }
+}

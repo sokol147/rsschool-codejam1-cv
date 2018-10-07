@@ -1,0 +1,32 @@
+- var sectionHeader = 'Portfolio';
+-
+  var portfolio = [
+    {
+      img: 'templates/images/portfolio-1.jpg',
+      link: 'http://sportage.by/',
+      title: 'Sportage.by',
+      description: 'Landing for the Belarusian dealer Kia.'
+    },{
+      img: 'templates/images/portfolio-2.jpg',
+      link: 'http://helpmate.by/',
+      title: 'Helpmate.by',
+      description: 'Adding functionality that allows placing an order on the helpmate site.'
+    },{
+      img: 'templates/images/portfolio-3.jpg',
+      link: 'http://manoukis.lt/',
+      title: 'Manoukis.lt',
+      description: 'Creation of a news portal for farmers.'
+    }
+  ]
+.portfolio
+  h2.header--with-line.section__header= sectionHeader
+  ul.portfolio__grid
+    each item in portfolio
+      li.portfolio__item
+        .portfolio__image-wrapper
+          a.portfolio__link(href=`${item.link}`)
+            img(src=`${item.img}` alt=`${item.title}`).portfolio__image
+        a.portfolio__link(href=`${item.link}`)
+          p.portfolio__title= item.title
+        p.portfolio__description= item.description
+
